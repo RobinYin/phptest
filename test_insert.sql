@@ -17,7 +17,7 @@ insert into books values
 	('0-672-31509-2','Pruitt, et al','Teach Yourself GIMP in 24 Hours', 24.99),
 	('0-672-31769-9','Thomas Schenk','Caldera OpenLinux System Administration Unleashed', 49.99);
 
-insert into oder_items values
+insert into order_items values
 	(1,'0-672-31697-8',2),
 	(2,'0-672-31769-9',1),
 	(3,'0-672-31769-9',1),
