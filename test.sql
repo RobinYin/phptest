@@ -30,4 +30,4 @@ create table order_items(
 create table book_reviews(
 	isbn char(13) not null primary key,
 	review text
-);
+)
