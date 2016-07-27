@@ -42,7 +42,7 @@
 	for($i=0; $i < $num_results; $i++){
 		$row = $result->fetch_assoc();
 		echo "<p><strong>".($i+1).".Title:";
-		echo htmlsepcialchars(stripslashes($row['title']));
+		echo htmlspecialchars(stripslashes($row['title']));
 		echo "</strong><br />Author:";
 		echo stripslashes($row['author']);
 		echo "<br />ISBN:";
