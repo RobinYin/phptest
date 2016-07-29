@@ -11,9 +11,9 @@ BEGIN
 	declare l_id int;
 
 	declare done int default 0;
-	declare continue handler for sqlstate '02000' set done=1;
 
 	declare c1 cursor for select orderid, amount from orders;
+	declare continue handler for sqlstate '02000' set done = 1;
 
 	open c1;
 
