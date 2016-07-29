@@ -7,4 +7,6 @@ BEGIN
 	select sum(amount) into total from orders;
 END
 
+//
+
 delimiter ;
