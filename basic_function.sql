@@ -2,7 +2,7 @@
 
 delimiter //
 
-create function add_tax (price float) return float
+create function add_tax (price float) returns float
 
 BEGIN
 	return price * 1.1;
