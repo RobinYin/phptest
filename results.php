@@ -11,8 +11,8 @@
 	<h1>Book-O-Rama Search Results</h1>
 
 	<?php
-	$searchtype = $_POST['searchtype'];
-	$searchterm = $_POST['searchterm'];
+	$searchtype = trim($_POST['searchtype']);
+	$searchterm = trim($_POST['searchterm']);
 
 	if(!$searchtype || !$searchterm){
 		echo 'You have not entered search details. Please go back and try again:';
