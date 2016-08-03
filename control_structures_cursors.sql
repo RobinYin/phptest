@@ -13,6 +13,7 @@ BEGIN
 	declare done int default 0;
 
 	declare c1 cursor for select orderid, amount from orders;
+	
 	declare continue handler for sqlstate '02000' set done = 1;
 
 	open c1;
