@@ -1,10 +1,10 @@
 <?php
 	$height = 200;
 	$width = 200;
-	// $im = imagecreatetruecolor($width, $height);
+	$im = imagecreatetruecolor($width, $height);
 
-	$im = imagecreate($width, $height);
-	
+	// $im = imagecreate($width, $height);
+
 	$white = imagecolorallocate($im, 255, 255, 255);
 	$blue = imagecolorallocate($im, 0, 0, 64);
 
@@ -13,7 +13,7 @@
 
 	imagestring($im, 4, 50, 150, 'Sales', $white);
 
-	// header('content-type: image/png');
+	header('Content-Type:image/png; charset=UTF-8');
 
 	imagepng($im);
 
