@@ -1,7 +1,7 @@
 <?php
 	$height = 200;
 	$width = 200;
-	$im = imagecreatetruecolor(width, height);
+	$im = imagecreatetruecolor($width, $height);
 	$white = imagecolorallocate($im, 255, 255, 255);
 	$blue = imagecolorallocate($im, 0, 0, 64);
 
