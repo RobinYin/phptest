@@ -10,7 +10,7 @@
 
 	imagestring($im, 4, 50, 150, 'Sales', $white);
 
-	header('content-type: image/png');
+	// header('content-type: image/png');
 
 	imagepng($im);
 
